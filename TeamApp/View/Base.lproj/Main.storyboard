@@ -118,6 +118,7 @@
                                 </state>
                                 <connections>
                                     <action selector="startButtonPressed:" destination="lQv-iw-2h3" eventType="touchUpInside" id="6ua-Ct-k4A"/>
+                                    <segue destination="Pi1-Wi-gRY" kind="show" id="b4y-TR-694"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3H-39-xcb" customClass="SpringLabel" customModule="Spring">
@@ -184,6 +185,106 @@
                 <exit id="E91-Ee-xdL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1589.5999999999999" y="26.53673163418291"/>
+        </scene>
+        <!--Test Started View Controller-->
+        <scene sceneID="KIg-vk-4Z7">
+            <objects>
+                <viewController id="Pi1-Wi-gRY" customClass="TestStartedViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yEC-vk-mMU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaZ-xy-ycs" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="162" y="98" width="50" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgs-za-z1O" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="162" y="145" width="50" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1ZB-sO-B3C">
+                                <rect key="frame" x="16" y="358" width="343" height="245"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAZ-A7-gim" customClass="SpringButton" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.92480665449999999" green="0.92177569869999998" blue="0.9215875268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8gJ-gI-n1S"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijn-OV-EuL" customClass="SpringButton" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="65" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.92480665449999999" green="0.92177569869999998" blue="0.9215875268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5tb-Y2-duH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEb-ne-CUR" customClass="SpringButton" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="130" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.92480665449999999" green="0.92177569869999998" blue="0.9215875268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4rt-rz-zEJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-53-WaA" customClass="SpringButton" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="195" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.92480665449999999" green="0.92177569869999998" blue="0.9215875268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4Tj-Jn-eU3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1ZB-sO-B3C" secondAttribute="height" multiplier="7:5" id="tMg-1v-MF8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fr3-xv-E88"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="Fr3-xv-E88" firstAttribute="trailing" secondItem="1ZB-sO-B3C" secondAttribute="trailing" constant="16" id="3vV-6r-XRF"/>
+                            <constraint firstItem="1ZB-sO-B3C" firstAttribute="leading" secondItem="Fr3-xv-E88" secondAttribute="leading" constant="16" id="Jga-iQ-md7"/>
+                            <constraint firstItem="Fr3-xv-E88" firstAttribute="bottom" secondItem="1ZB-sO-B3C" secondAttribute="bottom" constant="64" id="kHa-Zu-a52"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HK2-b1-WEe">
+                        <barButtonItem key="leftBarButtonItem" title="Выйти" id="Dr9-hK-27K">
+                            <connections>
+                                <segue destination="Wpr-UZ-OZ9" kind="unwind" unwindAction="unwindForLectionsTVC:" id="7Lo-6D-iPu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="questionLabel" destination="Pgs-za-z1O" id="TKK-oX-jUC"/>
+                        <outlet property="questionNumberLabel" destination="jaZ-xy-ycs" id="nY7-Rg-cQO"/>
+                        <outletCollection property="allButtons" destination="eEb-ne-CUR" collectionClass="NSMutableArray" id="3uD-wh-JBs"/>
+                        <outletCollection property="allButtons" destination="gqC-53-WaA" collectionClass="NSMutableArray" id="k0U-Vc-iIs"/>
+                        <outletCollection property="allButtons" destination="Ijn-OV-EuL" collectionClass="NSMutableArray" id="WoO-RR-Add"/>
+                        <outletCollection property="allButtons" destination="bAZ-A7-gim" collectionClass="NSMutableArray" id="FgA-Ma-B1D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDd-vz-BV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Wpr-UZ-OZ9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="26.53673163418291"/>
         </scene>
     </scenes>
     <resources>

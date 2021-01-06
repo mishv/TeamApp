@@ -15,6 +15,7 @@
 		C622DBCB25A33F84001C8180 /* Data Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBCA25A33F84001C8180 /* Data Manager.swift */; };
 		C622DBCF25A344AB001C8180 /* LectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBCE25A344AB001C8180 /* LectionsTableViewController.swift */; };
 		C622DBD325A35D43001C8180 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBD225A35D43001C8180 /* TestViewController.swift */; };
+		C670830F25A609380000324C /* TestStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670830E25A609380000324C /* TestStartedViewController.swift */; };
 		E597CA2307C6B5FA9E800531 /* Pods_TeamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7ED0676753FC9348D21C355 /* Pods_TeamApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		C622DBCA25A33F84001C8180 /* Data Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Manager.swift"; sourceTree = "<group>"; };
 		C622DBCE25A344AB001C8180 /* LectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectionsTableViewController.swift; sourceTree = "<group>"; };
 		C622DBD225A35D43001C8180 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		C670830E25A609380000324C /* TestStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStartedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				C622DBC425A33C5D001C8180 /* ModulesTableViewController.swift */,
 				C622DBCE25A344AB001C8180 /* LectionsTableViewController.swift */,
 				C622DBD225A35D43001C8180 /* TestViewController.swift */,
+				C670830E25A609380000324C /* TestStartedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				C622DBCF25A344AB001C8180 /* LectionsTableViewController.swift in Sources */,
 				C622DBAA25A33A4D001C8180 /* AppDelegate.swift in Sources */,
+				C670830F25A609380000324C /* TestStartedViewController.swift in Sources */,
 				C622DBCB25A33F84001C8180 /* Data Manager.swift in Sources */,
 				C622DBC525A33C5D001C8180 /* ModulesTableViewController.swift in Sources */,
 				C622DBD325A35D43001C8180 /* TestViewController.swift in Sources */,
