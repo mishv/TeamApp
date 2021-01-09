@@ -64,12 +64,6 @@ class ModulesTableViewController: UITableViewController {
         
         present(alert, animated: true, completion: nil)
     }
-    
-    
-    
-    
-    
-    
-   
 
 }
+
