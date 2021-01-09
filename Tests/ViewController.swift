@@ -32,7 +32,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var answer4: UIButton!
     
     
+<<<<<<< HEAD
     // обновление вопросов
+=======
+    
+>>>>>>> 46049588c3eb9d49ef78f88a95afa1460108afac
     private func updateUI() {
         
         let currentQuestion = questions[questionIndex]
@@ -136,7 +140,11 @@ class ViewController: UIViewController {
                 }
             }
         }
+<<<<<<< HEAD
 // алерт для показа правильности выбора ответа
+=======
+
+>>>>>>> 46049588c3eb9d49ef78f88a95afa1460108afac
     private func showAlert(title: String?, message: String?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
