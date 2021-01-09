@@ -1,8 +1,19 @@
 PODS:
+  - Realm (10.5.0):
+    - Realm/Headers (= 10.5.0)
+  - Realm/Headers (10.5.0)
+  - RealmSwift (10.5.0):
+    - Realm (= 10.5.0)
   - Spring (1.0.6)
 
 DEPENDENCIES:
+  - RealmSwift
   - Spring (from `https://github.com/LexDeBash/Spring.git`)
+
+SPEC REPOS:
+  trunk:
+    - Realm
+    - RealmSwift
 
 EXTERNAL SOURCES:
   Spring:
@@ -14,8 +25,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/LexDeBash/Spring.git
 
 SPEC CHECKSUMS:
+  Realm: e1c22c3d83b229afb70ebc10e1771c91e9542d12
+  RealmSwift: 6fc078d9d3fd7e58c71bfdbb694e252462f112a5
   Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
 
-PODFILE CHECKSUM: 45886ae2be67863e404714d835b0b20c36a5cead
+PODFILE CHECKSUM: f5dbb0c791693e7d9d75a4d738296e61a74fa5d3
 
 COCOAPODS: 1.10.0

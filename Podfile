@@ -6,5 +6,6 @@ target 'TeamApp' do
   use_frameworks!
 
   pod 'Spring', :git => 'https://github.com/LexDeBash/Spring.git'
+  pod 'RealmSwift'
 
 end
