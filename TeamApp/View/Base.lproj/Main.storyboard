@@ -19,12 +19,45 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="YhL-d1-qew" kind="relationship" relationship="rootViewController" id="jsI-LO-Aqu"/>
+                        <segue destination="FF9-HT-sv5" kind="relationship" relationship="rootViewController" id="es7-Vh-5J0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2TB-mf-Xlc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-780" y="27"/>
+            <point key="canvasLocation" x="-1561" y="27"/>
+        </scene>
+        <!--Меню-->
+        <scene sceneID="KB2-eB-SUY">
+            <objects>
+                <tableViewController title="Меню" id="FF9-HT-sv5" customClass="MenuTableViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hL7-sq-box">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="vXR-AC-qAE">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vXR-AC-qAE" id="F4Y-FB-EJQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FF9-HT-sv5" id="PoA-xX-XDw"/>
+                            <outlet property="delegate" destination="FF9-HT-sv5" id="Wc7-11-BDH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Меню" id="jSA-Or-qke"/>
+                    <connections>
+                        <segue destination="YhL-d1-qew" kind="show" identifier="modulesSegue" id="GPP-Nf-NVH"/>
+                        <segue destination="j3g-qq-720" kind="show" identifier="coursesSegue" id="cdY-Ry-03x"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1m-2j-kX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759" y="27"/>
         </scene>
         <!--Модули-->
         <scene sceneID="PIY-CE-9Hp">
@@ -52,11 +85,100 @@
                             <outlet property="delegate" destination="YhL-d1-qew" id="DZa-DH-eE1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Модули" id="oJn-Gz-fhJ"/>
+                    <navigationItem key="navigationItem" title="Модули" id="oJn-Gz-fhJ">
+                        <barButtonItem key="leftBarButtonItem" title="Меню" image="chevron.backward" catalog="system" id="vm1-zr-19r">
+                            <connections>
+                                <segue destination="Q2n-5f-EWr" kind="unwind" unwindAction="unwindForMenuTVC:" id="kbr-VZ-3E5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bs6-Mg-38D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Q2n-5f-EWr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="39" y="28"/>
+        </scene>
+        <!--Курсы-->
+        <scene sceneID="w8Q-uq-kch">
+            <objects>
+                <tableViewController title="Курсы" id="j3g-qq-720" customClass="CoursesTableViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EqZ-fh-FLm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="FHS-gy-ATy">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FHS-gy-ATy" id="wOB-lu-jkN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UYe-r2-II9">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="UYe-r2-II9" secondAttribute="height" multiplier="7:5" id="cxo-un-Q5K"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PO5-87-8Ci">
+                                            <rect key="frame" x="148" y="11" width="40" height="84"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqa-Jr-IMm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCe-K9-kbz">
+                                                    <rect key="frame" x="0.0" y="33" width="40" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFE-Ed-9u8">
+                                                    <rect key="frame" x="0.0" y="66" width="40" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="PO5-87-8Ci" secondAttribute="height" multiplier="10:21" id="VYC-uZ-fDy"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="PO5-87-8Ci" firstAttribute="leading" secondItem="UYe-r2-II9" secondAttribute="trailing" constant="8" symbolic="YES" id="0vm-SA-tan"/>
+                                        <constraint firstItem="UYe-r2-II9" firstAttribute="top" secondItem="wOB-lu-jkN" secondAttribute="top" id="9RL-3f-BCH"/>
+                                        <constraint firstAttribute="bottom" secondItem="PO5-87-8Ci" secondAttribute="bottom" constant="5" id="E9h-bL-g7P"/>
+                                        <constraint firstItem="UYe-r2-II9" firstAttribute="leading" secondItem="wOB-lu-jkN" secondAttribute="leading" id="WfM-LB-0vR"/>
+                                        <constraint firstItem="PO5-87-8Ci" firstAttribute="top" secondItem="wOB-lu-jkN" secondAttribute="top" constant="11" id="ZYt-Vu-TJp"/>
+                                        <constraint firstAttribute="bottom" secondItem="UYe-r2-II9" secondAttribute="bottom" id="sZf-7K-dNi"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="j3g-qq-720" id="CY9-Qa-ulj"/>
+                            <outlet property="delegate" destination="j3g-qq-720" id="zBa-mV-YLW"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Курсы" id="yaD-i9-Wup">
+                        <barButtonItem key="leftBarButtonItem" title="Меню" image="chevron.backward" catalog="system" id="Xa1-LS-mpG">
+                            <connections>
+                                <segue destination="AUX-ui-1A0" kind="unwind" unwindAction="unwindForMenuTVC:" id="VfJ-pE-YAK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0th-eg-y88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AUX-ui-1A0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="778.56071964017997"/>
         </scene>
         <!--Лекции-->
         <scene sceneID="n3T-RI-OGP">

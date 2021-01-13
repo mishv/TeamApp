@@ -15,6 +15,9 @@
 		C622DBCB25A33F84001C8180 /* Data Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBCA25A33F84001C8180 /* Data Manager.swift */; };
 		C622DBCF25A344AB001C8180 /* LectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBCE25A344AB001C8180 /* LectionsTableViewController.swift */; };
 		C622DBD325A35D43001C8180 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622DBD225A35D43001C8180 /* TestViewController.swift */; };
+		C66B87BD25AF153D00258555 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66B87BC25AF153D00258555 /* MenuTableViewController.swift */; };
+		C66B87C025AF15E100258555 /* Main Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66B87BF25AF15E100258555 /* Main Menu.swift */; };
+		C66B87C325AF1AE500258555 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66B87C225AF1AE500258555 /* CoursesTableViewController.swift */; };
 		C670830F25A609380000324C /* TestStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670830E25A609380000324C /* TestStartedViewController.swift */; };
 		E597CA2307C6B5FA9E800531 /* Pods_TeamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7ED0676753FC9348D21C355 /* Pods_TeamApp.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +36,9 @@
 		C622DBCA25A33F84001C8180 /* Data Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Manager.swift"; sourceTree = "<group>"; };
 		C622DBCE25A344AB001C8180 /* LectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectionsTableViewController.swift; sourceTree = "<group>"; };
 		C622DBD225A35D43001C8180 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		C66B87BC25AF153D00258555 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		C66B87BF25AF15E100258555 /* Main Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Menu.swift"; sourceTree = "<group>"; };
+		C66B87C225AF1AE500258555 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 		C670830E25A609380000324C /* TestStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStartedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,8 @@
 				C622DBCE25A344AB001C8180 /* LectionsTableViewController.swift */,
 				C622DBD225A35D43001C8180 /* TestViewController.swift */,
 				C670830E25A609380000324C /* TestStartedViewController.swift */,
+				C66B87BC25AF153D00258555 /* MenuTableViewController.swift */,
+				C66B87C225AF1AE500258555 /* CoursesTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				C622DBCA25A33F84001C8180 /* Data Manager.swift */,
+				C66B87BF25AF15E100258555 /* Main Menu.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,10 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66B87C025AF15E100258555 /* Main Menu.swift in Sources */,
 				C622DBCF25A344AB001C8180 /* LectionsTableViewController.swift in Sources */,
 				C622DBAA25A33A4D001C8180 /* AppDelegate.swift in Sources */,
 				C670830F25A609380000324C /* TestStartedViewController.swift in Sources */,
 				C622DBCB25A33F84001C8180 /* Data Manager.swift in Sources */,
+				C66B87BD25AF153D00258555 /* MenuTableViewController.swift in Sources */,
+				C66B87C325AF1AE500258555 /* CoursesTableViewController.swift in Sources */,
 				C622DBC525A33C5D001C8180 /* ModulesTableViewController.swift in Sources */,
 				C622DBD325A35D43001C8180 /* TestViewController.swift in Sources */,
 				C622DBAC25A33A4D001C8180 /* SceneDelegate.swift in Sources */,
