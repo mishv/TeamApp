@@ -8,7 +8,7 @@
 import UIKit
 
 enum URLs: String {
-    case URLone = "https://swiftbook.ru/wp-content/uploads/api/api_courses"
+    case URLone = "https://demo6825264.mockable.io"
 }
 
 class MenuTableViewController: UITableViewController {
