@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum URLs: String {
+    case URLone = "https://swiftbook.ru/wp-content/uploads/api/api_courses"
+}
+
 class MenuTableViewController: UITableViewController {
     
     let menuSections = MainMenu.allCases
@@ -16,6 +20,13 @@ class MenuTableViewController: UITableViewController {
         
 
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "coursesSegue" {
+//            let coursesVC = segue.destination as! CoursesTableViewController
+//            coursesVC.fetchCourses()
+//        }
+//    }
     
     // MARK: - Navigation
     @IBAction func unwind(forMenuTVC segue: UIStoryboardSegue) {}
@@ -42,9 +53,26 @@ class MenuTableViewController: UITableViewController {
             performSegue(withIdentifier: "modulesSegue", sender: nil)
         } else if indexPath.row == 1 {
             performSegue(withIdentifier: "coursesSegue", sender: nil)
+            showCourses()
+
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    private func showCourses() {
+        guard let url = URL(string: URLs.URLone.rawValue) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            guard let data = data else { return }
+            
+            do {
+                let course = try JSONDecoder().decode([Course].self, from: data)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }.resume()
+
     }
     
     
